@@ -5728,6 +5728,19 @@ function init() {
   });
 }
 
+/* Add listeners for drag / drop events */
+document.addEventListener('dragover', function(event) {
+  event.preventDefault();
+  // 
+});
+
+document.addEventListener('dragend', function(event) {
+  event.preventDefault();
+});
+
+document.addEventListener('drop', function(event) {
+  event.preventDefault();
+});
 /* It is quite conceivable this could be run after the document is ready.
  * Citation: Look at the 5000 lines above.
  * Second citation: The script is deferred. */
